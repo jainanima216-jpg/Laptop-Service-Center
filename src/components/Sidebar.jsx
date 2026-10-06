@@ -1,18 +1,22 @@
+import { Link } from "react-router-dom";
+
 function Sidebar() {
     return (
         <div className="sidebar">
 
-            <h2>Laptop Center</h2>
+            <Link to="/">Dashboard</Link>
 
-            <ul>
-                <li>Dashboard</li>
-                <li>Customers</li>
-                <li>Laptops</li>
-                <li>Job Cards</li>
-                <li>Services</li>
-                <li>Employees</li>
-                <li>Billing</li>
-            </ul>
+            <Link to="/customers">Customers</Link>
+
+            <Link to="/laptops">Laptops</Link>
+
+            <Link to="/job-cards">Job Cards</Link>
+
+            <Link to="/services">Services</Link>
+
+            <Link to="/employees">Employees</Link>
+
+            <Link to="/billing">Billing</Link>
 
         </div>
     );
